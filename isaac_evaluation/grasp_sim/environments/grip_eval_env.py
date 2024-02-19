@@ -86,7 +86,8 @@ class GraspingGymEnv():
 
         # create new shape object:
         obj_pose = gymapi.Transform()
-        obj_pose.p = gymapi.Vec3(0.0, 0.0, 0.9)
+        # obj_pose.p = gymapi.Vec3(0.0, 0.0, 0.9)
+        obj_pose.p = gymapi.Vec3(0.0, 0.0, 0.65)
 
         obj_pose.r = gymapi.Quat(quat[0], quat[1], quat[2], quat[3])
 
