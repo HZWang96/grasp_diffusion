@@ -27,7 +27,7 @@ pip install -e .
 #### Installation Issues
 1. ```pip install theseus-ai``` not working.
 I suggest trying to install Theseus from source https://github.com/AI-App/Theseus
-2. ```AssertionError: Torch not compiled with CUDA enabled```
+2. ```AssertionError: Torch not compiled with CUDA enabled```. 
 The version of PyTorch that is currently installed is for CPU only. We use PyTorch 1.13.1 for this project. Re-install PyTorch 1.13.1 with CUDA 11.6 or CUDA 11.7
 ```
 # CUDA 11.6
@@ -35,9 +35,9 @@ pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --e
 # CUDA 11.7
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
-3. ```ERROR: Could not build wheels for scikit-sparse, which is required to install pyproject.toml-based projects```
+3. ```ERROR: Could not build wheels for scikit-sparse, which is required to install pyproject.toml-based projects```. 
 Run `apt-get update && apt-get install libsuitesparse-dev`
-4. Issues with OpenGL
+4. Issues with OpenGL.
 Run `apt install freeglut3-dev`
 
 
